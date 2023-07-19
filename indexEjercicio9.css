@@ -1,0 +1,22 @@
+html{
+    background-color: #eee;
+}
+#titular{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: red;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+.parrafo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    text-align: justify;
+    padding: 50px;
+    color:indigo;
+}

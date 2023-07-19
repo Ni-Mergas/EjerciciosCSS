@@ -1,0 +1,15 @@
+header{
+    text-align: center;
+    color: blue;
+}
+section{
+    text-align: justify;
+}
+img{
+    display: block;
+    margin: auto;
+}
+p{
+    font-style:italic;
+    padding: 20px 20px 20px 20px;
+}

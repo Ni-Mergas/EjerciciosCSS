@@ -1,0 +1,10 @@
+a{
+    text-decoration: none;
+    color:cornflowerblue;
+}
+a:hover{
+    color:crimson
+}
+a:focus{
+    color:green;
+}

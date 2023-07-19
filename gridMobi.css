@@ -1,0 +1,47 @@
+@media(max-width:950px){
+    .grid-container{
+        grid-template-areas: 
+            "topheader"       100%
+            "containerLeft"   100%
+            "containerCenter" 100%
+            "containerRight"  100%
+            "footer"          100%/auto;
+    }
+    .menu{
+        flex-direction: column;/*por defecto estan en fila, aca se convierte a columna*/
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;/*Centrar el menu de navegacion cuando este abierto*/
+        background-color: aquamarine;
+        height: 100%;
+        overflow-y: auto;/*se adiciona una barra para hacer scroll cuando las dimensiones superen el alto de pantalla*/
+        opacity: 0;
+        pointer-events: none;/*Desactivar los botones del menu mientras este oculto*/
+        transition: opacity 0.2s;/*baja la velocidad en el cambio del menu*/
+    }
+    .menu li{
+        padding: 0;
+    }
+    .menu a{
+        line-height: 60px;/* Se modifica para que esten mas separados*/
+    }
+    .open-menu,
+    .close-menu{
+        display: block;/*Se le otorga visibilidad cuando este en dispositivos mobiles*/  
+        border: none;
+        background:none;/*se resetean las propiedades que vienen por defecto*/
+        cursor: pointer;
+    }
+    .close-menu{
+        align-self: flex-end;/*se le otorga self, ya que viene con un display y necesitamos alinearlo a la izquierda, por eso se le da end*/
+        padding: 20px;
+    }
+
+    .menu_opened{
+        opacity: 1;
+        pointer-events: all;/*Habilita las propiedades de navegacion del menu cuando este abierto*/
+
+    }
+}

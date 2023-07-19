@@ -1,0 +1,13 @@
+#titulo{
+    padding: 10px;
+    text-align: center;
+}
+
+.degradado{
+    color: white;
+    text-align: center;
+    padding: 14px;
+    margin: 20px;
+    border-radius: 20px;
+    background: linear-gradient(blue, pink) ;
+}
