@@ -57,16 +57,16 @@ span{
     position: relative;
 }
 
-@media(min-whidth:900px){
+/* @media(min-whidth:900px){ */
 .grid-container{
     display: grid;
     grid-template:
-    "containerLeft  topheader        containerRight" 100px
+    "containerLeft  topheader        contai67788nerRight" 100px
     "containerLeft  containerCenter  containerRight" auto
     "f1             footer           f3"         100px/
      28%             44%              28%;   
 }
-}
+/* } */
 /* Seccion media parte superior */
 /* menu de navegación */
 .topnav{
@@ -117,11 +117,12 @@ input{
 .open-menu, .close-menu{
     display: none;/*se le proporciona para que no se vean en dispositivo escritorio*/
 }
+/* -------------------------------------------------------------- */
 /* Seccion Izquierda */
 
 .containerLeft{
     display: grid;
-    padding: 40px;
+    padding: 20px;
 }
 .containerGridLeft{
     display: gird;
@@ -136,14 +137,15 @@ input{
 .icono #explorar{
     position: absolute;
     
-    top: 85px;
+    top: 65px;
     left: 100px;
 }
 .icono #configuracion{
     position: absolute;
-    top:133px;
+    top:113px;
     left: 100px;
 }
+/* ------------------------------------------------------------- */
 /* Sección Derecha */
 .tarjeta{
     width: 350px;
@@ -252,7 +254,7 @@ footer{
     gap:1rem;
     position: absolute;
     top:25px;
-    left: 150px;
+    left: 50px;
 }
 #botonIniciar{
     background-color: transparent; 
@@ -260,7 +262,7 @@ footer{
     padding: 6px;
     border: 1px solid white;   
     border-radius: 20px;
-    width: 120px;
+    width: 110px;
     height: 35px;
     cursor: pointer;
 }
@@ -274,101 +276,313 @@ footer{
     border-radius: 20px;
     cursor: pointer;
 }
-
-
-
-/*media query para dispositivos mobiles*/
-
-
-
 /* media query para tablets */
-@media (min-width:600px){
+@media (max-width:1024px){
     .grid-container{
         display: grid;
         grid-template:
         "topheader       topheader"        100px
         "containerLeft   containerLeft"   auto 
-        "containerRight   containerCenter"  auto
-        "footer          f3"               100px;
+        "containerRight   containerCenter" auto
+        "footer          f3"               100px/
+        50% 50%;
+        
     }
     .topheader{
-        grid-area: topheader;
-        border-bottom: 1px solid white;
-        text-align: center;
-        width: 100%;
+        border-bottom:1px solid white ;
+        border-right: none;
      }
-     /*
-    .containerCenter{
-        grid-area: containerCenter;
-        border-top: 1px solid white;
-        border-left: 1px solid white;
-        border-right: 1px solid white;
-    }*/
-    .containerLeft{
-        grid-area: containerLeft;
-        display: block;
-        padding: 40px;
-    }
+ 
     .containerRight{
-        grid-area: containerRight;
-        width: 100%; 
-    }/*
-    .f3{
-        grid-area: f3;
-        background-color: rgb(25, 160, 243);
-        position: relative;
-    } */
-
-        /* Seccion media parte superior */
-
-    .topnavBotonBuscar{
-        position: absolute;/*Posicionar el boton con respecto al input*/
-        height: 25px;
-        width: 25px;
-        border: 1px solid white;
-        background-color:whithe;
-        margin: auto;
-        border-radius: 0 10px 10px 0;
-        cursor:pointer;
+        border-top: 1px solid white;
+        border-right: 1px solid white;
     }
-    
-    .menu{
-        display:flex; /*en el menú hace que se dispongan en línea*/
-        margin: 0;/*reseteo del margen*/
-        padding: 0;/*reseteo del padding*/
-        list-style: none; /*quita las viñetas del menú*/
+    .f1{
+        grid-area: none;
+        display: none;
+    } 
+
+/* ---------------------------------------------------------------- */
+    /* Segunda seccion media */
+    .containerLeft{
+        display: inline-flex;
+        padding: auto;
+
     }
-    .menu li{
-        padding: 0 15px; /*Separación entre la lista menú*/
+    .containerGridLeft{
+        display: inline-flex;
         margin: 0 auto;
     }
-    .menu a{
-        /* font-size: 18px;Tamaño de la fuente */
-        line-height: 50px;/*centrar en la franja vertical*/
-    }
-    
-    .open-menu, .close-menu{
-        display: none;/*se le proporciona para que no se vean en dispositivo escritorio*/
-    }
-
-
-    /* Segunda seccion media */
-    .containerGridLeft{
-        display: flexbox;
-    }
-
     .icono i{
-        display: inline-flexbox;
-        height: 50px;
-        position: none;
+        display:inline-flex;
+        height: 40px;
+        width: 40px;
+        position:relative;
+        padding: 0px 80px ;
+    
+    }
+    i{
+        align-items: center;
+    }
+    .tituloNavegacion{
+        display:inline-flex;
     }
     .icono #explorar{
-        display: inline-flexbox;
-        padding: auto;
-        position: none;
+        margin: none;
+        display: inline-flex;
+        position: absolute;
+        top: 125px;
+        left: 420px;
+        padding: 5px;
     }
     .icono #configuracion{
-        display: inline-flexbox;
-        position:none;
+        display: inline-flex;
+        position: absolute;
+        top:125px;
+        left: 590px;
+        padding: 5px;
     }
+
+
+/* ------------------------------------------------------------------ */
+     /* Seccion media número 3 */
+
+     .tarjeta{
+        margin-top: 25px;
+        width: 300px;
+        height: 300px;
+        font-size: 14px;
+    }
+    .tarjeta, h2{
+        padding-top:10px;
+    }
+    .tarjeta,P{
+        padding-bottom:8px;
+        padding-top: 8px;
+    }
+    #tituloTarjeta{
+        font-size: 20px;
+    }
+    #condiciones{
+        width: 280px;
+        font-size: 14px;
+    }
+    #boton{
+        width: 250px;
+    }
+    .japon, .croacia, .gol{
+        font-size: 16px;
+    }
+    .img{
+        height: 50px;
+        width: 50px;
+    }
+
+    #nombre{
+        font-size: 18px;   
+    }
+/* --------------------------------------------------------------- */
+    /* Sección del footer */
+
+
+    .parrafosFooter{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .botonesFooter{
+        top:25px;
+        left: 130px;
+    }
+
+    #botonIniciar, #botonRegistrarse{
+        font-size: 12px;
+        width: 100px;
+        height: 30px;
+    }
+
 }
+
+/* --------------------------------------------------------------- */
+
+/*media query para dispositivos mobiles*/
+
+@media(max-width:426px){
+    .grid-container{
+        display: grid;
+        grid-template: 
+            "topheader"       auto
+            "containerLeft"   auto
+            "containerCenter" auto
+            "containerRight"  auto
+            "footer"          auto
+            "f3"              auto/
+            100%;
+    }
+    .topheader{
+        border-bottom:1px solid white ;
+        border-right: none;
+        
+     }
+ 
+    .containerRight{
+        border-top: 1px solid white;
+        border-right:none;
+    }
+    .f1{
+        grid-area: none;
+        display: none;
+    } 
+/* ------------------------------------------------------------- */
+        /* Seccion media parte superior */    
+        .menu{
+            flex-direction: column;/*por defecto estan en fila, aca se convierte a columna*/
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            align-items: center;/*Centrar el menu de navegacion cuando este abierto*/
+            background-color: #333232;
+        
+            height: 100%;
+            overflow-y: auto;/*se adiciona una barra para hacer scroll cuando las dimensiones superen el alto de pantalla*/
+            opacity: 0;
+            pointer-events: none;/*Desactivar los botones del menu mientras este oculto*/
+            transition: opacity 0.2s;/*baja la velocidad en el cambio del menu*/
+        }
+        .menu li{
+            padding: 0;
+        }
+        .menu a{
+            line-height: 60px;/* Se modifica para que esten mas separados*/
+            color: white;
+        }
+        .open-menu,
+        .close-menu{
+            display: block;/*Se le otorga visibilidad cuando este en dispositivos mobiles*/  
+            border: none;
+            background:none;/*se resetean las propiedades que vienen por defecto*/
+            cursor: pointer;
+            opacity: 0;
+        }
+        .close-menu{
+            align-self: flex-end;/*se le otorga self, ya que viene con un display y necesitamos alinearlo a la izquierda, por eso se le da end*/
+            padding: 20px;
+        }
+    
+        .menu_opened{
+            opacity: 1;
+            pointer-events: all;/*Habilita las propiedades de navegacion del menu cuando este abierto*/
+    
+        }
+
+/* ---------------------------------------------------------------- */
+    /* Segunda seccion media */
+    .containerLeft{
+        display: inline-flex;
+        padding: none;
+        border-right: none;
+        
+    }
+    .containerGridLeft{
+        display: inline-flex;
+    
+    }
+    .icono i{
+        display:inline-flex;
+        height: 10px;
+        width: 10px;
+        position:none;
+        padding: 20px;
+    }
+    .icono #explorar{
+        position: none;
+        opacity: 0;
+        top: 0px;
+        left: 0px;
+    }
+    .icono #configuracion{
+        position: none;
+        opacity: 0;
+        top:0px;
+        left: 0;
+    }
+  
+
+
+/* ------------------------------------------------------------------ */
+     /* Seccion media número 3 */
+
+     .containerCenter{
+        grid-area: containerCenter;
+        border-bottom: 1px solid white;
+        border-left: none;
+        border-right: none;
+    }
+
+    .japon, .croacia, .gol{
+        font-size: 16px;
+    }
+    .img{
+        height: 15px;
+        width: 15px;
+    }
+
+    #nombre{
+        font-size: 20px;   
+    }
+
+
+
+
+/*----------------------------------------------------------------*/
+/* Seccion Número 4 */
+
+    .containerRight{
+        margin: 0 auto;
+        border:none;
+    }
+    .tarjeta{
+        margin-top: 2px;
+        width: 300px;
+        height: 300px;
+        font-size: 14px;
+    }
+    .tarjeta, h2{
+        padding-top:10px;
+    }
+    .tarjeta,P{
+        padding-bottom:4px;
+        padding-top: 4px;
+    }
+    #tituloTarjeta{
+        font-size: 20px;
+    }
+    #condiciones{
+        width: 230px;
+        font-size: 14px;
+    }
+    #boton{
+        width: 260px;
+    }
+/* --------------------------------------------------------------- */
+    /* Sección del footer */
+    .footer{
+        padding-bottom: 0px;
+    }
+    .parrafosFooter{
+        padding-bottom: 0px;
+    }
+    .f3{
+        display: grid;
+        grid-area: f3;  
+        height: 65px;
+    }
+
+    .botonesFooter{
+        top:25px;
+        left: 100px;
+        padding-top: 0px;
+    }
+
+}
+
